@@ -8,6 +8,7 @@ export default {
   ],
   theme: {
     extend: {
+      utilities: { '.no-scrollbar': { '-ms-overflow-style': 'none', /* Internet Explorer 10+ */ 'scrollbar-width': 'none', /* Firefox */ '&::-webkit-scrollbar': { display: 'none', /* Safari and Chrome */ },}},
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
