@@ -1,4 +1,4 @@
-body {
+/* body {
     height: 100%;
     margin: 0;
     overflow: hidden;
@@ -18,4 +18,47 @@ body {
     stroke: #131e29;
     stroke-width: 1.5;
     fill: #f7a1a8;
-}
+} */
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .card h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+  
+  .card h4 {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .card p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #777;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  

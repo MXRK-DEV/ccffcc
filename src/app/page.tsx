@@ -5,6 +5,8 @@ import Image from "next/image"
 import { motion, useInView, useScroll, useTransform } from "framer-motion"
 import { useRef } from "react";
 import Link from "next/link";
+
+
 // import Footer from '@/components/Footer';
 
 
@@ -92,15 +94,15 @@ const Homepage = () => {
 <div className="h-[200vh]  relative " ref={skillRef}>
 <motion.div  initial={{x:"-800px"}} 
             animate={isSkillRefInView ? {x:0} : {}}
-            transition={{ delay:0.5 }} className=" flex items-center justify-center text-6xl text-center w-screen h-screen text-black ">A Tour</motion.div>
+            transition={{ delay:0.2 }} className=" flex items-center justify-center text-6xl text-center w-screen h-screen text-black ">A Tour</motion.div>
 
 {/* CARDS */}
 <div className=" w-screen  flex flex-wrap justify-center gap-6 p-4"> 
-  {items.map((item) => ( <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white" key={item.id}> 
+  {items.map((item) => ( <div className="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800" key={item.id}> 
     <Image className="w-full" src={item.img} alt={item.title} width={400} height={250} objectFit="cover" /> 
     <div className="px-6 py-4"> 
       <div className="font-bold text-xl mb-2">{item.title}</div> 
-      <p className="text-gray-700 text-base">{item.desc}</p> </div> 
+      <p className="text-white text-base">{item.desc}</p> </div> 
       <div className="px-6 pt-4 pb-2"> 
         <Link href={item.link} passHref> 
       <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Read More</button> 
@@ -142,7 +144,7 @@ const Homepage = () => {
 
     </motion.div>
 
-
+    
     
     </>
        
