@@ -49,6 +49,13 @@ const initialCards = [
     thumbsDown: 0,
     timestamp: ''
   },
+  {
+    title: 'Card Title 6',
+    description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    thumbsUp: 0,
+    thumbsDown: 0,
+    timestamp: ''
+  },
   // Add more cards as needed
 ];
 
